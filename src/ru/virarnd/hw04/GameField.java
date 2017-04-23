@@ -50,7 +50,6 @@ public class GameField {
     //Проверка что координаты точки не выходят за границы поля. На входе: ячейка
     public boolean checkRangeIsGood(Cell checkedCell) {
         return (checkXY(checkedCell.x, checkedCell.y));
-//        return !(checkedCell.x < 0 || checkedCell.x >= size || checkedCell.y < 0 || checkedCell.y >= size);
     }
 
     //Проверка что координаты точки не выходят за границы поля. На входе: координаты ячейки.

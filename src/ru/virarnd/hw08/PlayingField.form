@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.virarnd.hw08.PlayingField">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="465" height="453"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="cdcb9" binding="mainField" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <minimumSize width="300" height="300"/>
+          <preferredSize width="300" height="300"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="6faf5" class="javax.swing.JButton" binding="playersButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <horizontalTextPosition value="0"/>
+          <maximumSize width="105" height="30"/>
+          <minimumSize width="105" height="30"/>
+          <preferredSize width="105" height="30"/>
+          <text value="ИГРОКИ"/>
+        </properties>
+      </component>
+      <component id="e723b" class="javax.swing.JButton" binding="newGameButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <horizontalTextPosition value="0"/>
+          <maximumSize width="105" height="30"/>
+          <minimumSize width="105" height="30"/>
+          <preferredSize width="105" height="30"/>
+          <text value="НОВАЯ ИГРА"/>
+        </properties>
+      </component>
+      <component id="86eed" class="javax.swing.JLabel" binding="tipField">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <maximumSize width="57" height="20"/>
+          <minimumSize width="57" height="20"/>
+          <preferredSize width="57" height="20"/>
+          <text value="Подсказка"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
