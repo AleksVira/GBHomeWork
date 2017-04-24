@@ -96,17 +96,16 @@ class GameControl extends JFrame {
     private void nextMove() {
         if (gameStared) {
             if (!currentPlayer.isHuman()) {
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 playingField.setDot(currentPlayer.nextAiTurn(), currentPlayer.getDotType());
                 turnCounter++;
-                playingField.refresh();
                 checkFinish();
                 changePlayer();
                 playingField.refresh();
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 if (!currentPlayer.isHuman()) {
                     nextMove();
                 } else {

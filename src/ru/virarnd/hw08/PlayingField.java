@@ -112,7 +112,7 @@ public class PlayingField extends JPanel {
         Cell testCell = new Cell(cellY / (mainField.getHeight() / numberOfCells), cellX / (mainField.getWidth() / numberOfCells));
         if (isEmpty(testCell)) {
             setDot(testCell, dotType);
-            mainField.repaint();
+            refresh();
             return true;
         } else {
             return false;
